@@ -35,7 +35,13 @@ function getAkanName(akanDayIndex, gender) {
 
 // Display Akan name
 function showAkanName(name) {
-  document.getElementById('display-akan-name').innerText = `Your Akan name is ${name}`;
+  document.getElementById('display-akan-name').innerHTML = `
+  <div class="card">
+  <div class="card-body bg-light">
+    Imagine your Akan name is : <span class="text-success">${name}</span>
+  </div>
+</div>
+  `;
 }
 
 // Form submission
