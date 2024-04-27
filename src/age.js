@@ -30,3 +30,25 @@ function getAkanName(akanDayIndex, gender) {
         return femaleAkanNames[akanDayIndex];
     }
 }
+
+// Display Akan name
+function showAkanName(name) {
+    document.getElementById('display-akan-name').innerText = `Your Akan name is ${name}`;
+}
+
+// Form submission
+document.getElementById('akanForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const day = parseInt(document.getElementById('day').value);
+    const month = parseInt(document.getElementById('month').value);
+    const year = parseInt(document.getElementById('year').value);
+    const gender = document.getElementById('gender').value;
+
+    if (isValidDateMonth(day, month)) {
+        const dayOfWeek = calculateDayOfWeek(day, month, year);
+        const akanName = getAkanName(dayOfWeek, gender);
+        showAkanName(akanName);
+    } else {
+        alert('Invalid date and month.');
+    }
+});
