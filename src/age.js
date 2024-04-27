@@ -19,3 +19,6 @@ function calculateDayOfWeek(day, month, year) {
 
     return akanDayIndex;
 }
+
+const maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+const femaleAkanNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
