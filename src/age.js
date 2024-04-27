@@ -22,3 +22,11 @@ function calculateDayOfWeek(day, month, year) {
 
 const maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 const femaleAkanNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+
+function getAkanName(akanDayIndex, gender) {
+    if (gender === 'male') {
+        return maleAkanNames[akanDayIndex];
+    } else {
+        return femaleAkanNames[akanDayIndex];
+    }
+}
