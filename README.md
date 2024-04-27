@@ -1,6 +1,6 @@
 ## Sneak Peek
 
-![Chat](Screenshot.png)
+![Chat](Screenshot-2.png)
 
 # Akan Name Calculator
 
